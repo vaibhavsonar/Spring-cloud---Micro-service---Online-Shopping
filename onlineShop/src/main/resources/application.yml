@@ -1,0 +1,13 @@
+spring:
+  datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/cloudTest
+        username: root
+        password: jan2016$
+
+onlineShopClient:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8002
+    ServerListRefreshInterval: 15000

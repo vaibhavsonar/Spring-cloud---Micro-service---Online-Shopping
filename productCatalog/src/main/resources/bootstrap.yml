@@ -1,0 +1,15 @@
+spring:  
+  application:
+    name: productCatalog
+  cloud:
+    config:
+      uri: http://localhost:8888
+      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8002/products
+
+turbine:
+  clusterNameExpression: new String("default")
+  appConfig: productCatalog

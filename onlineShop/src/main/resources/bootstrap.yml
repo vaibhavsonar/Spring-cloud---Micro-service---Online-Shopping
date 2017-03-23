@@ -1,0 +1,15 @@
+spring:  
+  application:
+    name: onlineShopClient
+  cloud:
+    config:
+      uri: http://localhost:8888
+      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8002/myshop/
+
+turbine:
+  clusterNameExpression: new String("default")
+  appConfig: onlineShopClient
